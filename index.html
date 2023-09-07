@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Leaflet JS CSS file-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="crossorigin=""></script>
+    <!--Ends here-->
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+<div class="top-container-hero">
+    <div class="heading">
+        <h1>IP Address Tracker</h1>
+    </div>
+    <div class="seacrh-section">
+        <input type="text" placeholder="Search for any IP Adress or domain" id="find">
+        <div class="icon">
+            <button id='icon'> <ion-icon name="chevron-forward-outline"></ion-icon>
+       </button></div>
+
+    </div>
+</div>
+<!--card section starts here-->
+<div class="card-section">
+    <div class="ip-section">
+        <p class="text pb-2"> IP ADDRESS</p>
+        <h4 id="IP">192.212.174.101</h4>
+    </div>
+    <hr>
+    <div class="Location-section">
+        <p class="text pb-2">LOCATION</p>
+        <h4 id="location">PUNE</h4>
+    </div>
+    <hr>
+    <div class="Timezone-section">
+        <p class="text pb-2">TIMEZONE</p>
+        <h4 id="Timezone">UTC -05:00</h4>
+    </div>
+    <hr>
+    <div class="Internet-section">
+        <p class="text pb-2">ISP</p>
+        <h4 id="ISP">STARLINK</h4>
+    </div>
+    
+    </div>
+<!--Card section ends here-->
+<div class="map-section">
+    <div id="map"></div>
+</div>
+</div>
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
